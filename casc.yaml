@@ -1,13 +1,4 @@
-# configScripts:
-#   welcome-message: |
-#     jenkins:
-#        systemMessage: Welcome to our CI\CD server.  This Jenkins is configured and managed 'as code'.
-
 jenkins:
-  #credentials:
-  #    - string:
-  #      id: "test"
-  #      secret: ${test}
   systemMessage: Welcome to The CI\CD server! -- This Jenkins is configured and managed 'as code'! 
   agentProtocols:
   - "JNLP4-connect"
@@ -53,10 +44,6 @@ security:
 unclassified:
   casCGlobalConfig:
     configurationPath: "https://raw.githubusercontent.com/everett-lacey/casc/master/casc.yaml"
-#   credentials:
-#       - string:
-#         id: test
-#         secret: ${test:-NO SECRET}
   bitbucketEndpointConfiguration:
     endpoints:
     - bitbucketCloudEndpoint:
