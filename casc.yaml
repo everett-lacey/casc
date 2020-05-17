@@ -1,3 +1,18 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - string:
+          description: "evs-jenkins-key"
+          id: "everett-lacey"
+          scope: GLOBAL
+          secret: "{AQAAABAAAAAwNA+F2lFtD4YG65nYEQOHN6MSuGWWJIoNGivjsckEbHNdW9oIs4QFd6erIo2Z6A5lojacaP1xDdYWlHgTA6/qEA==}"
+      - usernamePassword:
+          description: "username with pass with my creds"
+          id: "evs-gh-key"
+          password: "{AQAAABAAAAAwFG8TV2vFspAm5dTsFhXMOUPY4uNJsger2u7IGBXiEwRh/SN0+NwNjnnfPxCcuPtqWpPHPF+N5iIjlum1sja8gQ==}"
+          scope: GLOBAL
+          username: "everett-lacey"
 jenkins:
   systemMessage: Welcome to The CI\CD server! -- This Jenkins is configured and managed 'as code'! 
   agentProtocols:
