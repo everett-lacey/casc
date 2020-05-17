@@ -8,7 +8,7 @@ jenkins:
   #    - string:
   #      id: "test"
   #      secret: ${test}
-  systemMessage: Welcome to The CI\CD server -- This Jenkins is configured and managed 'as code'!
+  systemMessage: Welcome to The CI\CD server -- This Jenkins is configured and managed 'as code'! ${test}
   agentProtocols:
   - "JNLP4-connect"
   - "Ping"
