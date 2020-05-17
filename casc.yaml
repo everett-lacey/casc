@@ -53,10 +53,10 @@ security:
 unclassified:
   casCGlobalConfig:
     configurationPath: "https://raw.githubusercontent.com/everett-lacey/casc/master/casc.yaml"
-#   credentials:
-#       - string:
-#         id: "test"
-#         secret: ${test}
+  credentials:
+      - string:
+        id: "test"
+        secret: ${test}
   bitbucketEndpointConfiguration:
     endpoints:
     - bitbucketCloudEndpoint:
