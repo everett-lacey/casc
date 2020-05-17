@@ -51,10 +51,12 @@ security:
   sSHD:
     port: -1
 unclassified:
-  credentials:
-      - string:
-        id: "test"
-        secret: ${test}
+  casCGlobalConfig:
+    configurationPath: "https://raw.githubusercontent.com/everett-lacey/casc/master/casc.yaml"
+#   credentials:
+#       - string:
+#         id: "test"
+#         secret: ${test}
   bitbucketEndpointConfiguration:
     endpoints:
     - bitbucketCloudEndpoint:
