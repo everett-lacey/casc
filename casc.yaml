@@ -3,13 +3,13 @@ credentials:
     domainCredentials:
     - credentials:
       - string:
-          description: "evs-jenkins-key"
-          id: "everett-lacey"
+          description: "test-string"
+          id: "test-string"
           scope: GLOBAL
           secret: "{AQAAABAAAAAwNA+F2lFtD4YG65nYEQOHN6MSuGWWJIoNGivjsckEbHNdW9oIs4QFd6erIo2Z6A5lojacaP1xDdYWlHgTA6/qEA==}"
       - usernamePassword:
-          description: "username with pass with my creds"
-          id: "evs-gh-key"
+          description: "test-cred"
+          id: "test-cred"
           password: "{AQAAABAAAAAwFG8TV2vFspAm5dTsFhXMOUPY4uNJsger2u7IGBXiEwRh/SN0+NwNjnnfPxCcuPtqWpPHPF+N5iIjlum1sja8gQ==}"
           scope: GLOBAL
           username: "everett-lacey"
