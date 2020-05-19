@@ -3,31 +3,78 @@ credentials:
     domainCredentials:
     - credentials:
       - string:
-          description: "test-string"
-          id: "test-string"
+          description: "evs-jenkins-key"
+          id: "everett-lacey"
           scope: GLOBAL
-          secret: "{AQAAABAAAAAwNA+F2lFtD4YG65nYEQOHN6MSuGWWJIoNGivjsckEbHNdW9oIs4QFd6erIo2Z6A5lojacaP1xDdYWlHgTA6/qEA==}"
+          secret: "{AQAAABAAAABwYTFFrlhfVbPeh+0sHuiUP6QMM1z9vRYl0YvByJhnA14UOYcdpiRd/3wnORck4iidCvK0kV3t3KylFZre3qSDgl8q34iCVo75FDUUWP3sJEzYQI+aXzJmNFnb49wBNzYm/TWZx46YIE8SbVz64U2bTYVtXCF7Gjk0LEu7Zcc5PWA=}"
       - usernamePassword:
-          description: "test-cred"
-          id: "test-cred"
-          password: "{AQAAABAAAAAwFG8TV2vFspAm5dTsFhXMOUPY4uNJsger2u7IGBXiEwRh/SN0+NwNjnnfPxCcuPtqWpPHPF+N5iIjlum1sja8gQ==}"
+          description: "username with pass with my creds"
+          id: "evs-gh-key"
+          password: "{AQAAABAAAAAwVMdDguHVyuJpvf1gIdCpPSZ7oRkBuRydynA/GLsC9PGEMr02Flz+zWUVc7F6V4xqsDd5ECJG+cPw0s5T8X9QJw==}"
           scope: GLOBAL
           username: "everett-lacey"
+      - googleRobotPrivateKey:
+          module: |-
+            FAILED TO EXPORT
+            com.google.jenkins.plugins.credentials.oauth.GoogleRobotPrivateKeyCredentials#module: No configurator found for type class com.google.jenkins.plugins.credentials.oauth.GoogleRobotCredentialsModule
+          projectId: "taos-pso-prod-services"
+          serviceAccountConfig:
+            json:
+              filename: "taos-pso-prod-services-906ae3b95daf.json"
+              secretJsonKey: "{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}"
 jenkins:
-  systemMessage: Welcome to The CI\CD server! -- This Jenkins is configured and managed 'as code'! 
   agentProtocols:
   - "JNLP4-connect"
   - "Ping"
+  clouds:
+  - kubernetes:
+      connectTimeout: 10
+      containerCap: 10
+      containerCapStr: "10"
+      credentialsId: "taos-pso-prod-services"
+      defaultsProviderTemplate: "k8scloudtemplate"
+      jenkinsTunnel: "jenkins-helm-agent:50000"
+      jenkinsUrl: "http://jenkins-helm:8080"
+      maxRequestsPerHost: 32
+      maxRequestsPerHostStr: "32"
+      name: "kubernetes"
+      namespace: "jenkins"
+      readTimeout: 30
+      serverUrl: "https://kubernetes.default"
+      templates:
+      - containers:
+        - args: "cat"
+          command: "/bin/sh -c"
+          image: "hashicorp/terraform"
+          livenessProbe:
+            failureThreshold: 0
+            initialDelaySeconds: 0
+            periodSeconds: 0
+            successThreshold: 0
+            timeoutSeconds: 0
+          name: "terraform"
+          ttyEnabled: true
+          workingDir: "/home/jenkins"
+        hostNetwork: false
+        label: "docker-container"
+        name: "docker-terraform"
+        namespace: "jenkins"
+        nodeUsageMode: "NORMAL"
+        slaveConnectTimeout: 600
+        slaveConnectTimeoutStr: "600"
+        yamlMergeStrategy: "override"
+      usageRestricted: true
   crumbIssuer:
     standard:
       excludeClientIPFromCrumb: false
   disableRememberMe: false
   labelAtoms:
+  - name: "docker-container"
   - name: "master"
   markupFormatter: "plainText"
   mode: NORMAL
   myViewsTabBar: "standard"
-  numExecutors: 2
+  numExecutors: 0
   primaryView:
     all:
       name: "all"
@@ -37,6 +84,8 @@ jenkins:
     enabled: false
   scmCheckoutRetryCount: 0
   slaveAgentPort: 50000
+  systemMessage: "Welcome to The CI\\CD server! -- This Jenkins is configured and\
+    \ managed 'as code'!"
   updateCenter:
     sites:
     - id: "default"
@@ -57,8 +106,6 @@ security:
   sSHD:
     port: -1
 unclassified:
-  casCGlobalConfig:
-    configurationPath: "https://raw.githubusercontent.com/everett-lacey/casc/master/casc.yaml"
   bitbucketEndpointConfiguration:
     endpoints:
     - bitbucketCloudEndpoint:
@@ -69,6 +116,8 @@ unclassified:
   buildDiscarders:
     configuredBuildDiscarders:
     - "jobBuildDiscarder"
+  casCGlobalConfig:
+    configurationPath: "https://raw.githubusercontent.com/everett-lacey/casc/master/casc.yaml"
   defaultFolderConfiguration:
     healthMetrics:
     - worstChildHealthMetric:
@@ -78,10 +127,9 @@ unclassified:
     allowUnregisteredEnabled: false
     charset: "UTF-8"
     debugMode: false
-    defaultBody: |-
-      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
-
-      Check console output at $BUILD_URL to view the results.
+    defaultBody: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:\r\n\r\nCheck\
+      \ console output at $BUILD_URL to view the results."
+    defaultContentType: "text/plain"
     defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
     maxAttachmentSize: -1
     maxAttachmentSizeMb: 0
@@ -98,6 +146,7 @@ unclassified:
     useExistingAccountWithSameEmail: false
   location:
     adminAddress: "address not configured yet <nobody@nowhere>"
+    url: "https://pso-jenkins.taos.com/"
   mailer:
     charset: "UTF-8"
     useSsl: false
@@ -112,7 +161,24 @@ unclassified:
   upstream:
     globalUpstreamFilterStrategy: UseOldest
 tool:
+  dockerTool:
+    installations:
+    - name: "auto-docker"
+      properties:
+      - installSource:
+          installers:
+          - docker:
+              version: "latest"
+    - name: "docker"
   git:
     installations:
     - home: "git"
       name: "Default"
+  terraform:
+    installations:
+    - name: "terraform"
+      properties:
+      - installSource:
+          installers:
+          - terraformInstaller:
+              id: "0.12.25-darwin-amd64"
